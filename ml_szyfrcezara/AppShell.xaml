@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ml_szyfrcezara.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ml_szyfrcezara"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar>
+        <Tab Title="Szyfruj" Icon="keyon.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Szyfruj}"/>
+        </Tab>
+        <Tab Title="Deszyfruj" Icon="keyoff.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Deszyfruj}"/>
+        </Tab>
+    </TabBar>
+
+</Shell>
